@@ -1,0 +1,48 @@
+@using CourseWorkMuseumBlazorApp.Data.Models
+@using CourseWorkMuseumBlazorApp.Services
+@inject NavigationManager _navigationManager
+
+
+<h1>Список билетов</h1>
+<table class="table">
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Название выставки</th>
+        <th>Дата</th>
+        <th>Цена</th>
+        <th>Льгота</th>
+    </tr>
+    </thead>
+    <tbody>
+    @if (tickets != null)
+    {
+        @foreach (var ticket in tickets)
+        {
+            <tr  @onclick="()=>toItem(ticket)">
+                <td>@ticket.TicketId</td>
+                <td>@ticket.NameOfExhibitions</td>
+                <td>@ticket.Date</td>
+                <td>@ticket.Price</td>
+                <td>@ticket.Benefits</td>
+            </tr>
+        }
+    }
+    </tbody>
+</table>
+
+
+
+@code{
+    private List<Ticket>? tickets;
+    [Inject]
+    private ITicketProvider ticketsProvider { get; set; }
+    protected override async Task OnInitializedAsync()
+    {
+        tickets = await ticketsProvider.GetAll();
+    }
+    public void toItem(Ticket ticket)
+    {
+        _navigationManager.NavigateTo($"/Ticket/{ticket.TicketId}");
+    }
+}

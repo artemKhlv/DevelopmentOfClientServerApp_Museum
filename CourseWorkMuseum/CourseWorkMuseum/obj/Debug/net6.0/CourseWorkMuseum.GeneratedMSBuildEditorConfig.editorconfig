@@ -1,0 +1,60 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = CourseWorkMuseum
+build_property.RootNamespace = CourseWorkMuseum
+build_property.ProjectDir = /Users/artemkhilalov/Desktop/2course4semester/Developmentofclient-serverapp/CourseWorkMuseum/CourseWorkMuseum/CourseWorkMuseum/
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = /Users/artemkhilalov/Desktop/2course4semester/Developmentofclient-serverapp/CourseWorkMuseum/CourseWorkMuseum/CourseWorkMuseum
+build_property._RazorSourceGeneratorDebug = 
+
+[/Users/artemkhilalov/Desktop/2course4semester/Developmentofclient-serverapp/CourseWorkMuseum/CourseWorkMuseum/CourseWorkMuseum/Views/Home/ErrorPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9FcnJvclBhZ2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/artemkhilalov/Desktop/2course4semester/Developmentofclient-serverapp/CourseWorkMuseum/CourseWorkMuseum/CourseWorkMuseum/Views/Home/Exhibitions.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9FeGhpYml0aW9ucy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/artemkhilalov/Desktop/2course4semester/Developmentofclient-serverapp/CourseWorkMuseum/CourseWorkMuseum/CourseWorkMuseum/Views/Home/GroupExhibition.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Hcm91cEV4aGliaXRpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/artemkhilalov/Desktop/2course4semester/Developmentofclient-serverapp/CourseWorkMuseum/CourseWorkMuseum/CourseWorkMuseum/Views/Home/JakeWoodEvans.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9KYWtlV29vZEV2YW5zLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/artemkhilalov/Desktop/2course4semester/Developmentofclient-serverapp/CourseWorkMuseum/CourseWorkMuseum/CourseWorkMuseum/Views/Home/Magic1.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9NYWdpYzEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/artemkhilalov/Desktop/2course4semester/Developmentofclient-serverapp/CourseWorkMuseum/CourseWorkMuseum/CourseWorkMuseum/Views/Home/MainPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9NYWluUGFnZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/artemkhilalov/Desktop/2course4semester/Developmentofclient-serverapp/CourseWorkMuseum/CourseWorkMuseum/CourseWorkMuseum/Views/Home/NicolasHoliber.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9OaWNvbGFzSG9saWJlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/artemkhilalov/Desktop/2course4semester/Developmentofclient-serverapp/CourseWorkMuseum/CourseWorkMuseum/CourseWorkMuseum/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/artemkhilalov/Desktop/2course4semester/Developmentofclient-serverapp/CourseWorkMuseum/CourseWorkMuseum/CourseWorkMuseum/Views/Home/WelcomePage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9XZWxjb21lUGFnZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/artemkhilalov/Desktop/2course4semester/Developmentofclient-serverapp/CourseWorkMuseum/CourseWorkMuseum/CourseWorkMuseum/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/artemkhilalov/Desktop/2course4semester/Developmentofclient-serverapp/CourseWorkMuseum/CourseWorkMuseum/CourseWorkMuseum/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-4p4d9rxkff

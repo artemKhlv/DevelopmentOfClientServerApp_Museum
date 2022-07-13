@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "zhLAGkqoABKqonDzvM+JVLPxTZzAZPGuxqr9qoBdIVkgJfo/v8Liv77sAuiTvCbyLAWxx8DiRz7aEyODoNf55w==",
+  "success": true,
+  "projectFilePath": "/Users/artemkhilalov/Desktop/2course4semester/Developmentofclient-serverapp/CourseWorkMuseum/CourseWorkMuseum/Mirror/Mirror.csproj",
+  "expectedPackageFiles": [
+    "/Users/artemkhilalov/.nuget/packages/microsoft.extensions.logging.abstractions/6.0.1/microsoft.extensions.logging.abstractions.6.0.1.nupkg.sha512",
+    "/Users/artemkhilalov/.nuget/packages/npgsql/7.0.0-preview.4/npgsql.7.0.0-preview.4.nupkg.sha512",
+    "/Users/artemkhilalov/.nuget/packages/system.runtime.compilerservices.unsafe/6.0.0/system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

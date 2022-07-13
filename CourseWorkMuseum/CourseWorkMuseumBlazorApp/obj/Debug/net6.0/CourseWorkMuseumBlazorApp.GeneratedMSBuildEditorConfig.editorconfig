@@ -1,0 +1,75 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = browser
+build_property.EnableSingleFileAnalyzer = 
+build_property.EnableTrimAnalyzer = true
+build_property.IncludeAllContentForSelfExtract = 
+build_property.RootNamespace = CourseWorkMuseumBlazorApp
+build_property.RootNamespace = CourseWorkMuseumBlazorApp
+build_property.ProjectDir = /Users/artemkhilalov/Desktop/2course4semester/Developmentofclient-serverapp/CourseWorkMuseum/CourseWorkMuseum/CourseWorkMuseumBlazorApp/
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = /Users/artemkhilalov/Desktop/2course4semester/Developmentofclient-serverapp/CourseWorkMuseum/CourseWorkMuseum/CourseWorkMuseumBlazorApp
+build_property._RazorSourceGeneratorDebug = 
+
+[/Users/artemkhilalov/Desktop/2course4semester/Developmentofclient-serverapp/CourseWorkMuseum/CourseWorkMuseum/CourseWorkMuseumBlazorApp/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/artemkhilalov/Desktop/2course4semester/Developmentofclient-serverapp/CourseWorkMuseum/CourseWorkMuseum/CourseWorkMuseumBlazorApp/Components/ExhibitionList.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9FeGhpYml0aW9uTGlzdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/artemkhilalov/Desktop/2course4semester/Developmentofclient-serverapp/CourseWorkMuseum/CourseWorkMuseum/CourseWorkMuseumBlazorApp/Components/ExhibitList.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9FeGhpYml0TGlzdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/artemkhilalov/Desktop/2course4semester/Developmentofclient-serverapp/CourseWorkMuseum/CourseWorkMuseum/CourseWorkMuseumBlazorApp/Components/TicketList.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9UaWNrZXRMaXN0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/artemkhilalov/Desktop/2course4semester/Developmentofclient-serverapp/CourseWorkMuseum/CourseWorkMuseum/CourseWorkMuseumBlazorApp/Pages/Counter.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ291bnRlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/artemkhilalov/Desktop/2course4semester/Developmentofclient-serverapp/CourseWorkMuseum/CourseWorkMuseum/CourseWorkMuseumBlazorApp/Pages/FetchData.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRmV0Y2hEYXRhLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/artemkhilalov/Desktop/2course4semester/Developmentofclient-serverapp/CourseWorkMuseum/CourseWorkMuseum/CourseWorkMuseumBlazorApp/Pages/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/artemkhilalov/Desktop/2course4semester/Developmentofclient-serverapp/CourseWorkMuseum/CourseWorkMuseum/CourseWorkMuseumBlazorApp/Shared/SurveyPrompt.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL1N1cnZleVByb21wdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/artemkhilalov/Desktop/2course4semester/Developmentofclient-serverapp/CourseWorkMuseum/CourseWorkMuseum/CourseWorkMuseumBlazorApp/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/artemkhilalov/Desktop/2course4semester/Developmentofclient-serverapp/CourseWorkMuseum/CourseWorkMuseum/CourseWorkMuseumBlazorApp/Pages/Exhibit.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRXhoaWJpdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-rsff93w4rw
+
+[/Users/artemkhilalov/Desktop/2course4semester/Developmentofclient-serverapp/CourseWorkMuseum/CourseWorkMuseum/CourseWorkMuseumBlazorApp/Pages/Exhibition.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRXhoaWJpdGlvbi5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-89vgf5v9py
+
+[/Users/artemkhilalov/Desktop/2course4semester/Developmentofclient-serverapp/CourseWorkMuseum/CourseWorkMuseum/CourseWorkMuseumBlazorApp/Pages/Ticket.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvVGlja2V0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-cfox92jnpq
+
+[/Users/artemkhilalov/Desktop/2course4semester/Developmentofclient-serverapp/CourseWorkMuseum/CourseWorkMuseum/CourseWorkMuseumBlazorApp/Shared/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL01haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-fh1os9ofug
+
+[/Users/artemkhilalov/Desktop/2course4semester/Developmentofclient-serverapp/CourseWorkMuseum/CourseWorkMuseum/CourseWorkMuseumBlazorApp/Shared/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL05hdk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-m64r4d3rvw

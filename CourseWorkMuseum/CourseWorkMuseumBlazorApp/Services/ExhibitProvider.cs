@@ -1,0 +1,48 @@
+using System.Net.Http.Json;
+using Newtonsoft.Json;
+using CourseWorkMuseumBlazorApp.Data.Models;
+
+namespace CourseWorkMuseumBlazorApp.Services;
+
+public class ExhibitProvider : IExhibitProvider
+{
+    private HttpClient _client;
+    public ExhibitProvider(HttpClient client)
+    {
+        _client = client;
+    }
+    
+    public async Task<List<Exhibit>> GetAll()
+    {
+        return await _client.GetFromJsonAsync<List<Exhibit>>("/api/exhibit");
+    }
+
+    public async Task<Exhibit> GetOne(int id)
+    {
+        return await _client.GetFromJsonAsync<Exhibit>($"/api/exhibit/{id}");
+    }
+
+    public async Task<bool> Add(Exhibit item)
+    {
+        string data = JsonConvert.SerializeObject(item);
+        StringContent httpContent = new StringContent(data, System.Text.Encoding.UTF8, "application/json");
+        var responce = await _client.PostAsync($"/api/exhibit", httpContent);
+        return await Task.FromResult(responce.IsSuccessStatusCode);
+    }
+
+    public async Task<Exhibit> Edit(Exhibit item)
+    {
+        string data = JsonConvert.SerializeObject(item);
+        StringContent httpContent = new StringContent(data, System.Text.Encoding.UTF8, "application/json");
+        var responce = await _client.PutAsync($"/api/exhibit", httpContent);
+        Exhibit exhibit = JsonConvert.DeserializeObject<Exhibit>(responce.Content.ReadAsStringAsync().Result);
+        return await Task.FromResult(exhibit);
+    }
+
+    public async Task<bool> Remove(int id)
+    {
+        var delete = await _client.DeleteAsync($"/api/exhibit/${id}");
+
+        return await Task.FromResult(delete.IsSuccessStatusCode);
+    }
+}

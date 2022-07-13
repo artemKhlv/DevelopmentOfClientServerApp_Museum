@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>@ViewData["Title"] - DemoMyProject1</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true"/>
+    <link rel="stylesheet" href="~/DemoMyProject1.styles.css" asp-append-version="true"/>
+</head>
+<body>
+<!--
+<header>
+    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sw">
+        <h5 class="my-0 mr-md-auto font-weight-normal">the Museum of History</h5>
+        <nav class="container d-flex flex-column flex-md-row justify-content-between">
+            <a class="py-2" asp-action="WelcomePage" aria-label="Product">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor"
+                     stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mx-auto" role="img"
+                     viewBox="0 0 24 24"><title>Main Page</title>
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"></path>
+                </svg>
+            </a>
+            <a class="py-2 d-none d-md-inline-block" asp-action="MainPage">Главная страница</a>
+            <a class="py-2 d-none d-md-inline-block" asp-action="ErrorPage">Билеты</a>
+            <a class="py-2 d-none d-md-inline-block" asp-action="ErrorPage">Посетителям</a>
+            <a class="py-2 d-none d-md-inline-block" asp-action="Exhibitions">Экспонаты</a>
+            <a class="py-2 d-none d-md-inline-block" asp-action="Magic1">События</a>
+            <a class="py-2 d-none d-md-inline-block" asp-action="ErrorPage">О музее</a>
+        </nav>
+    </div>
+</header>
+-->
+<div class="container">
+    <main role="main" class="pb-3">
+        @RenderBody()
+    </main>
+</div>
+
+<footer class="text-muted py-5">
+    <div class="container">
+        <a class="py-2" asp-action="Privacy" aria-label="Product">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor"
+                 stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mx-auto" role="img"
+                 viewBox="0 0 24 24"><title>Главная страница</title>
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"></path>
+            </svg>
+        </a>
+        <p class="mb-1">© 2022 Artem, Inc.</p>
+        <p class="mb-1">Все права защищены.</p>
+    </div>
+</footer>
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="~/js/site.js" asp-append-version="true"></script>
+@await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

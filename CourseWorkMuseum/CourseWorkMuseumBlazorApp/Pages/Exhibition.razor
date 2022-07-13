@@ -1,0 +1,40 @@
+@page "/Exhibition/{ExhibitionId}"
+@using CourseWorkMuseumBlazorApp.Services
+
+<h3>Информация о выставке</h3>
+@if (CurrentExhibition != null)
+{
+    <div class="authorBlock">
+        <div class="field">
+            <label class="label">Идентификатор</label> <input class="form-control valueField" type="text" value="@CurrentExhibition.ExhibitionId" aria-label="Disabled input example" disabled readonly>
+        </div>
+        <div class="field">
+            <label class="label">Название</label> <input class="form-control valueField" type="text" value="@CurrentExhibition.Name" aria-label="Disabled input example" disabled readonly>
+        </div>
+        <div class="field">
+            <label class="label">Автор</label> <input class="form-control valueField" type="text" value="@CurrentExhibition.Author" aria-label="Disabled input example" disabled readonly>
+        </div>
+        <div class="field">
+            <label class="label">Дата</label> <input class="form-control valueField" type="text" value="@CurrentExhibition.Date" aria-label="Disabled input example" disabled readonly>
+        </div>
+        <div class="field">
+            <label class="label">Жанр</label> <input class="form-control valueField" type="text" value="@CurrentExhibition.Genre" aria-label="Disabled input example" disabled readonly>
+        </div>
+    </div>
+}
+
+@code {
+    [Parameter]
+    public string ExhibitionId { get; set; }
+    public List<Data.Models.Exhibition> Exhibitions { get; set; }
+    public Data.Models.Exhibition? CurrentExhibition { get; set; }
+    [Inject]
+    private IExhibitionProvider exhibitionsProvider { get; set; }
+    protected async override Task OnInitializedAsync()
+    {
+        CurrentExhibition = await exhibitionsProvider.GetOne(Int32.Parse(ExhibitionId));
+        Exhibitions = await exhibitionsProvider.GetAll();
+        Console.WriteLine(CurrentExhibition);
+        base.OnInitialized();
+    }
+}

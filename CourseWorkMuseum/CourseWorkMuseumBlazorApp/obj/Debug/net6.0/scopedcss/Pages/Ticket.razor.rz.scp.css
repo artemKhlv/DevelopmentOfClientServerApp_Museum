@@ -1,0 +1,26 @@
+.field[b-cfox92jnpq] {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+}
+.authorBlock[b-cfox92jnpq] {
+    display: flex;
+    flex-direction: column;
+}
+.label[b-cfox92jnpq] {
+    width: 200px;
+}
+.valueField[b-cfox92jnpq] {
+    width: 400px;
+}
+.artAuthors[b-cfox92jnpq] {
+    display: flex;
+    flex-direction: column;
+}
+.authorTag[b-cfox92jnpq] {
+    padding: 5px;
+    margin-top: 5px;
+    border: 1px solid #8b008bff;
+    border-radius: 8px;
+    background-color: #ff00ff44;
+}

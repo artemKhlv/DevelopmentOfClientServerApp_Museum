@@ -1,0 +1,288 @@
+body {
+    
+}
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+.front{
+    background-color: black;
+}
+/* for page of exhibits*/
+.gallery{
+    /**** отступ со всех сторон 10px (padding - внутренний отступ от границы блока до содержимого)****/
+    padding: 30px;
+    /**** ширина ****/
+    max-width: 1100px;
+    /**** определяет внешний отступ на всех четырёх сторонах элемента ****/
+    margin: 0 auto;
+    display: grid;
+    /**** для отступа между ячейками грида ****/
+    grid-gap: 30px;
+    /**** для добавления колонок ****/
+    grid-template-columns: repeat(auto-fit,minmax(203.44px,1fr));/**** функция repeat - позволяет сокращать объявление колонок и строк в случае повторяющихся значений ****/
+                                                              /**** minmax - минимальная ширина, чтобы картинки не стали очень узкими ****/ 
+                                                              /**** 1fr - расстянуть равномерно по 250px ****/
+                                                              /**** auto-fit - говорит браузеру перенести элемент на новую строку, чтобы небыло перекрытий ****/
+    grid-auto-rows: 203.44px;
+    grid-auto-flow: dense;
+}
+/**** stretch vertically ****/
+.v-stretch{
+    width: 203.44px;
+    height: 135.79px;
+    
+}
+/**** stretch horizontally ****/
+.h-stretch{
+    width: 203.44px;
+    height: 305.16px;
+}
+/**** stretch vertically and horizontally ****/
+.big-stretch{
+    grid-row: span 2;
+    grid-column: span 2;
+}
+
+.gallery div img{
+    width: 100%;
+    height: 100%;
+    /**** определяет, каким образом содержимое замещаемых элементов будет подогнано к краям контейнера ****/
+    object-fit: cover; /**** cover - содержимое элемента обрезается, выравниваясь по центру с сохранением пропорций таким образом, чтобы полностью заполнить область контейнера ****/
+    
+}
+/* ---------------------- */
+
+.text-block p{
+    margin-bottom:20px;
+}
+
+/** for welcome page and video **/
+.video-bg{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.video-bg video{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+/** ------------------ **/
+
+/*** for main page ***/
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.intro{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    
+    background: url("../img/slide4.jpg") center no-repeat; 
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.section {
+    padding: 80px 0;
+}
+
+.section--devices {
+    background: url("../img/slide3.jpg") center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.section--clients {
+    background: url("../img/slide2.jpg") center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.header{
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    color: #ffffff;
+}
+.headers{
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    color: #000000;
+}
+
+.nav-links{
+    /* белый цвет */
+    color: #000000;
+    /* чтобы небыло подчеркивания */
+    text-decoration: none;
+    /* изменение света от белого к темно-желтому со временем 0.2 секунды */
+    transition: color .2s linear;
+
+    position: relative;
+}
+
+.nav-link{
+    /* белый цвет */
+    color: #ffffff;
+    /* чтобы небыло подчеркивания */
+    text-decoration: none;
+    /* изменение света от белого к темно-желтому со временем 0.2 секунды */
+    transition: color .2s linear;
+    
+    position: relative;
+}
+
+.nav-links:hover{
+    color: #ffca2c;
+}
+
+.nav-link:hover { 
+    /* изменение света от белого к темно-желтому */
+    color: #ffca2c;
+}
+/*** ------------------ ***/
+
+/* Group Exhibition */
+.introdaction{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+
+    background: url("https://artlogic-res.cloudinary.com/w_2400,h_1800,c_limit,f_auto,fl_lossy,q_auto:good/ws-unitlondon3/usr/images/exhibitions/hero_image/103/als-001-2.jpg") center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.section-header{
+    width: 100%;
+    max-width: 880px;
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+.section-subtitle{
+    color: #000000;
+    font-size: 150px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+.section-subtitles{
+    color: #ffffff;
+    font-size: 150px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+.section-title{
+    margin-bottom: 20px;
+    
+    font-size: 72px;
+    color: #000000;
+}
+
+.section-titles{
+    margin-bottom: 20px;
+
+    font-size: 72px;
+    color: #ffffff;
+}
+
+.section{
+    background-color: #1a1e21;
+}
+
+.section-text{
+    display:table-cell;
+}
+
+.visual{
+    color: #ffffff;
+    position: relative;
+    bottom: 10px;
+    top: 10px;
+    right: 100px;
+    left: 20px;
+    
+}
+
+.visual-too{
+    color: #ffffff;
+    position: relative;
+    bottom: 10px;
+    top: 10px;
+    right: 100px;
+    left: 20px;
+}
+
+.container-row{
+    display:table-row;
+}
+
+.nav-linkt{
+    /* белый цвет */
+    color: #000000;
+    /* чтобы небыло подчеркивания */
+    text-decoration: none;
+    /* изменение света от белого к темно-желтому со временем 0.2 секунды */
+    transition: color .2s linear;
+    position: relative;
+}
+
+
+.introdactions{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+
+    background: url("https://artlogic-res.cloudinary.com/w_2400,h_1800,c_limit,f_auto,fl_lossy,q_auto:good/ws-unitlondon3/usr/images/exhibitions/hero_image/102/jwe-325.jpg") center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.text-right{
+    justify-content: right;
+}
+
+
+
+

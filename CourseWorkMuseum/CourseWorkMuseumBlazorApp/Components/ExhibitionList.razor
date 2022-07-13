@@ -1,0 +1,50 @@
+@using CourseWorkMuseumBlazorApp.Data.Models
+@using CourseWorkMuseumBlazorApp.Services
+@inject NavigationManager _navigationManager
+
+
+<h1>Список выставок</h1>
+<table class="table">
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Название</th>
+        <th>Автор</th>
+        <th>Дата</th>
+        <th>Жанр</th>
+    </tr>
+    </thead>
+    <tbody>
+    @if (_exhibitions != null)
+    {
+       @foreach (var exhibition in _exhibitions)
+        {
+            <tr  @onclick="()=>toItem(exhibition)">
+                <td>@exhibition.ExhibitionId</td>
+                <td>@exhibition.Name</td>
+                <td>@exhibition.Author</td>
+                <td>@exhibition.Date</td>
+                <td>@exhibition.Genre</td>
+            </tr>
+        }
+    }
+    </tbody>
+</table>
+
+
+
+@code{
+    private List<Exhibition>? _exhibitions;
+    [Inject]
+    private IExhibitionProvider exhibitionsProvider { get; set; }
+    protected override async Task OnInitializedAsync()
+    {
+        _exhibitions = await exhibitionsProvider.GetAll();
+    }
+    public void toItem(Exhibition exhibition)
+    {
+        _navigationManager.NavigateTo($"/Exhibition/{exhibition.ExhibitionId}");
+    }
+    
+}
+v

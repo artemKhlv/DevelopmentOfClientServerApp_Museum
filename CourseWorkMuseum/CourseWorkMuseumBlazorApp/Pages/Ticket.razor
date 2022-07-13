@@ -1,0 +1,40 @@
+@page "/Ticket/{TicketId}"
+@using CourseWorkMuseumBlazorApp.Services
+
+<h3>Информация об экспонате</h3>
+@if (CurrentTicket != null)
+{
+    <div class="authorBlock">
+        <div class="field">
+            <label class="label">Идентификатор</label> <input class="form-control valueField" type="text" value="@CurrentTicket.TicketId" aria-label="Disabled input example" disabled readonly>
+        </div>
+        <div class="field">
+            <label class="label">Название выставки</label> <input class="form-control valueField" type="text" value="@CurrentTicket.NameOfExhibitions" aria-label="Disabled input example" disabled readonly>
+        </div>
+        <div class="field">
+            <label class="label">Дата</label> <input class="form-control valueField" type="text" value="@CurrentTicket.Date" aria-label="Disabled input example" disabled readonly>
+        </div>
+        <div class="field">
+            <label class="label">Цена</label> <input class="form-control valueField" type="text" value="@CurrentTicket.Price" aria-label="Disabled input example" disabled readonly>
+        </div>
+        <div class="field">
+            <label class="label">Льгота</label> <input class="form-control valueField" type="text" value="@CurrentTicket.Benefits" aria-label="Disabled input example" disabled readonly>
+        </div>
+    </div>
+}
+
+@code {
+    [Parameter]
+    public string TicketId { get; set; }
+    public List<Data.Models.Ticket> Tickets { get; set; }
+    public Data.Models.Ticket? CurrentTicket { get; set; }
+    [Inject]
+    private ITicketProvider ticketsProvider { get; set; }
+    protected async override Task OnInitializedAsync()
+    {
+        CurrentTicket = await ticketsProvider.GetOne(Int32.Parse(TicketId));
+        Tickets = await ticketsProvider.GetAll();
+        Console.WriteLine(CurrentTicket);
+        base.OnInitialized();
+    }
+}
